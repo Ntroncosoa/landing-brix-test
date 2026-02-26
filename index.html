@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRIX Corredora – Propiedades en Sector Oriente, Las Condes y Providencia</title>
+    <meta name="description"
+        content="Corredora especializada en el mercado usado de Sector Oriente. Cartera propia de departamentos, locales y activos en Las Condes y Providencia." />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Brix favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="images/Brix-LogoBlanco-256.png" alt="Brix Corredora" class="brand-logo" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="#propiedades" class="nav-link">Propiedades</a></li>
+                <li><a href="#proceso" class="nav-link">Proceso</a></li>
+                <li><a href="#preguntas" class="nav-link">Preguntas</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="nav-mobile" id="nav-mobile">
+            <a href="#propiedades" class="nav-mobile-link">Propiedades</a>
+            <a href="#proceso" class="nav-mobile-link">Proceso</a>
+            <a href="#preguntas" class="nav-mobile-link">Preguntas</a>
+            <a href="https://wa.me/56942845969" target="_blank" rel="noopener" class="btn-nav btn-nav-full">Hablar con
+                un asesor</a>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+
+            <!-- Izquierda -->
+            <div class="hero-left reveal-left">
+                <div class="hero-label">
+                    <span class="label-dot"></span>
+                    Corredora especializada · Sector Oriente
+                </div>
+                <h1 class="hero-title">
+                    Encuentra tu propiedad en Sector Oriente
+                    <span class="gradient-text">sin meses saltando entre portales</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Accede a nuestra cartera propia en Las Condes, Vitacura y Providencia, con información confirmada y
+                    asesoría directa de nuestra corredora.
+                </p>
+                <p class="hero-authority">
+                    <span class="authority-dot">◆</span>
+                    Corredora especializada en mercado residencial y comercial usado
+                </p>
+            </div>
+
+            <!-- Derecha: tarjeta premium -->
+            <div class="hero-right reveal-right">
+                <div class="hero-visual">
+                    <div class="visual-glow"></div>
+
+                    <!-- Tarjeta principal -->
+                    <div class="visual-card main-card">
+                        <div class="vc-header-row">
+                            <span class="vc-tag">Cartera actual</span>
+                            <span class="vc-status-dot"></span>
+                        </div>
+                        <div class="vc-range-label">Rango disponible</div>
+                        <div class="vc-range">Desde UF 6.400 <span class="vc-range-sep">—</span> UF 65.000</div>
+
+                        <!-- Barra 1 -->
+                        <div class="vc-metric">
+                            <div class="vc-metric-header">
+                                <span class="vc-metric-name">Rentabilidad estimada</span>
+                                <span class="vc-metric-ref">4% – 5%</span>
+                            </div>
+                            <div class="vc-bar">
+                                <div class="vc-bar-fill" data-fill="47"
+                                    style="background: linear-gradient(90deg, #3B82F6, #60A5FA);"></div>
+                            </div>
+                            <div class="vc-metric-note">Propiedades de inversión con renta activa</div>
+                        </div>
+
+                        <!-- Barra 2 -->
+                        <div class="vc-metric">
+                            <div class="vc-metric-header">
+                                <span class="vc-metric-name">Demanda consolidada</span>
+                                <span class="vc-metric-ref">85% – 92%</span>
+                            </div>
+                            <div class="vc-bar">
+                                <div class="vc-bar-fill" data-fill="88"
+                                    style="background: linear-gradient(90deg, #10B981, #34D399);"></div>
+                            </div>
+                            <div class="vc-metric-note">Ubicaciones con alta ocupación en Sector Oriente</div>
+                        </div>
+                    </div>
+
+                    <!-- Mini cards laterales -->
+                    <div class="visual-card side-card side-card-1">
+                        <div class="side-icon">📍</div>
+                        <div>
+                            <div class="side-title">Las Condes</div>
+                            <div class="side-val">Disponible</div>
+                        </div>
+                    </div>
+                    <div class="visual-card side-card side-card-2">
+                        <div class="side-icon">🏢</div>
+                        <div>
+                            <div class="side-title">Providencia</div>
+                            <div class="side-val">Disponible</div>
+                        </div>
+                    </div>
+
+                    <div class="visual-orb orb-1"></div>
+                    <div class="visual-orb orb-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll hint -->
+        <div class="hero-scroll-hint" aria-hidden="true">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN 1: DECLARACIÓN CLARA ===== -->
+    <section class="section-declaracion" id="declaracion">
+        <div class="section-container">
+            <div class="declaracion-inner reveal-up">
+                <h2 class="section-title">Trabajamos exclusivamente con propiedades<br>de <span
+                        class="gradient-text">nuestra cartera</span></h2>
+                <p class="declaracion-text">
+                    Somos una corredora de propiedades especializada en el Sector Oriente. La asesoría que entregamos
+                    está enfocada únicamente en oportunidades que administramos directamente.
+                </p>
+                <div class="declaracion-pills">
+                    <div class="dpill">
+                        <span class="dpill-icon">🏢</span>
+                        <div>
+                            <div class="dpill-title">Cartera propia</div>
+                            <div class="dpill-sub">Especialización en mercado residencial y activos en operación.</div>
+                        </div>
+                    </div>
+                    <div class="dpill">
+                        <span class="dpill-icon">🎯</span>
+                        <div>
+                            <div class="dpill-title">Foco en activos reales</div>
+                            <div class="dpill-sub">Propiedades ya disponibles y verificadas</div>
+                        </div>
+                    </div>
+                    <div class="dpill">
+                        <span class="dpill-icon">🤝</span>
+                        <div>
+                            <div class="dpill-title">Asesoría directa</div>
+                            <div class="dpill-sub">Sin intermediarios ni plataformas externas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN 2: PARA QUIÉN ===== -->
+    <section class="section-para-quien" id="para-quien">
+        <div class="section-container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">¿Para quién es esta asesoría?</h2>
+                <p class="section-subtitle">Dos perfiles distintos, un mismo estándar de atención.</p>
+            </div>
+
+            <div class="para-quien-grid">
+                <!-- Inversión -->
+                <div class="pq-card pq-inversion reveal-left">
+                    <div class="pq-icon-wrap pq-icon-blue">
+                        <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                    </div>
+                    <h3 class="pq-title">Inversión en activos consolidados</h3>
+                    <ul class="pq-list">
+                        <li><span class="pq-check">✦</span> Propiedades ya arrendadas o con alta demanda</li>
+                        <li><span class="pq-check">✦</span> Posibilidad de mantener contratos vigentes</li>
+                        <li><span class="pq-check">✦</span> Flujo desde el primer mes</li>
+                        <li><span class="pq-check">✦</span> Construcción de patrimonio en comunas consolidadas</li>
+                    </ul>
+                    <a href="https://wa.me/56942845969" target="_blank" rel="noopener" class="btn-primary"
+                        id="pq-inversion-btn">
+                        <span>Quiero revisar oportunidades de inversión</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Para vivir -->
+                <div class="pq-card pq-vivir reveal-right">
+                    <div class="pq-icon-wrap pq-icon-purple">
+                        <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M3 9.75L12 3l9 6.75V21a1 1 0 01-1 1H4a1 1 0 01-1-1V9.75z" />
+                            <path d="M9 22V12h6v10" />
+                        </svg>
+                    </div>
+                    <h3 class="pq-title">Compra para uso propio</h3>
+                    <ul class="pq-list">
+                        <li><span class="pq-check">✦</span> Departamentos en barrios consolidados</li>
+                        <li><span class="pq-check">✦</span> Ubicaciones como El Golf, Las Condes y Providencia</li>
+                        <li><span class="pq-check">✦</span> Proceso acompañado paso a paso</li>
+                        <li><span class="pq-check">✦</span> Información clara antes de avanzar</li>
+                    </ul>
+                    <a href="https://wa.me/56942845969" target="_blank" rel="noopener" class="btn-secondary-solid"
+                        id="pq-vivir-btn">
+                        <span>Quiero encontrar mi próxima propiedad</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN 3: 95% ARRENDADAS ===== -->
+    <section class="section-arrendadas" id="arrendadas">
+        <div class="section-container">
+            <div class="arrendadas-inner reveal-up">
+                <div class="arrendadas-stat">
+                    <div class="stat-number">95<span class="stat-pct">%</span></div>
+                    <div class="stat-label">de nuestra cartera<br>actualmente arrendada</div>
+                </div>
+                <div class="arrendadas-content">
+                    <h2 class="section-title text-left">El 95% de nuestras propiedades<br>se encuentran actualmente
+                        arrendadas</h2>
+                    <p class="arrendadas-text">
+                        Gran parte de nuestra cartera ya está generando renta activa.
+                    </p>
+                    <div class="arrendadas-cards">
+                        <div class="arr-card arr-card-inversion">
+                            <div class="arr-card-icon">📈</div>
+                            <div class="arr-card-title">Si compras como inversión</div>
+                            <div class="arr-card-text">Puedes mantener el contrato vigente y comenzar a recibir ingresos
+                                desde el primer mes.</div>
+                        </div>
+                        <div class="arr-card arr-card-vivir">
+                            <div class="arr-card-icon">🏠</div>
+                            <div class="arr-card-title">Si compras para vivir</div>
+                            <div class="arr-card-text">El proceso contempla los plazos legales correspondientes para la
+                                entrega del inmueble.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN 4: PROCESO ===== -->
+    <section class="section-proceso" id="proceso">
+        <div class="section-container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Cómo funciona la compra<br>de una propiedad usada</h2>
+                <p class="section-subtitle">A diferencia de proyectos nuevos, la compra de una propiedad usada implica
+                    un proceso más detallado y seguro.</p>
+            </div>
+
+            <div class="proceso-steps reveal-up">
+                <div class="proceso-step">
+                    <div class="paso-num">01</div>
+                    <div class="paso-icon">🤝</div>
+                    <div class="paso-content">
+                        <h3 class="paso-title">Reserva y negociación</h3>
+                        <p class="paso-text">Se acuerdan condiciones, precio y forma de pago. Se firma promesa de
+                            compraventa con garantías para ambas partes.</p>
+                    </div>
+                    <div class="paso-connector"></div>
+                </div>
+                <div class="proceso-step">
+                    <div class="paso-num">02</div>
+                    <div class="paso-icon">📋</div>
+                    <div class="paso-content">
+                        <h3 class="paso-title">Estudio de títulos</h3>
+                        <p class="paso-text">Un abogado revisa el historial legal de la propiedad para asegurar que esté
+                            libre de gravámenes e hipotecas.</p>
+                    </div>
+                    <div class="paso-connector"></div>
+                </div>
+                <div class="proceso-step">
+                    <div class="paso-num">03</div>
+                    <div class="paso-icon">🏦</div>
+                    <div class="paso-content">
+                        <h3 class="paso-title">Evaluación bancaria</h3>
+                        <p class="paso-text">El banco aprueba el crédito hipotecario según tu perfil financiero. El
+                            proceso es equivalente a una propiedad nueva.</p>
+                    </div>
+                    <div class="paso-connector"></div>
+                </div>
+                <div class="proceso-step">
+                    <div class="paso-num">04</div>
+                    <div class="paso-icon">✅</div>
+                    <div class="paso-content">
+                        <h3 class="paso-title">Firma y transferencia</h3>
+                        <p class="paso-text">Se firma escritura ante notario y se inscribe en el Conservador de Bienes
+                            Raíces. La propiedad pasa a tu nombre.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proceso-footer reveal-up">
+                <div class="proceso-tiempo">
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        stroke-width="1.5">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 6v6l4 2" />
+                    </svg>
+                    El proceso puede tomar entre <strong>60 y 120 días</strong> dependiendo del caso.
+                </div>
+                <div class="proceso-tiempo" style="margin-top:10px;">
+                    Gestionamos el proceso completo en conjunto contigo, asegurando que cada etapa avance con claridad y
+                    respaldo legal.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN 5: PROPIEDADES ===== -->
+    <section class="section-props" id="propiedades">
+        <div class="section-container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Oportunidades actualmente disponibles</h2>
+                <p class="section-subtitle">Una selección de propiedades usadas en Las Condes, Vitacura y Providencia.
+                </p>
+            </div>
+
+            <div class="props-grid">
+
+                <!-- Card 1 -->
+                <article class="prop-card reveal-up" style="--delay:0.05s">
+                    <div class="prop-img" style="--g1:#0c2a52;--g2:#1a3a6e;">
+                        <img src="images/Isidora_Goyenechea_2985.jpg" alt="Isidora Goyenechea 2985"
+                            class="prop-img-photo" loading="lazy" />
+                        <div class="prop-img-shimmer"></div>
+                        <span class="prop-type-badge">Departamento</span>
+                        <span class="prop-status-badge prop-status-arrendada">Arrendada</span>
+                    </div>
+                    <div class="prop-body">
+                        <div class="prop-commune">📍 Las Condes</div>
+                        <h3 class="prop-address">Isidora Goyenechea 2985</h3>
+                        <ul class="prop-specs">
+                            <li><span class="spec-icon">💰</span> UF 22.000</li>
+                            <li><span class="spec-icon">📐</span> 282 m² totales (256 útiles + 26 terraza)</li>
+                            <li><span class="spec-icon">🏠</span> 6D · 5B · 2 estac. · 1 bodega</li>
+                        </ul>
+                        <a href="https://wa.me/56942845969" target="_blank" rel="noopener" class="prop-cta-btn"
+                            id="prop-1-cta">Solicitar detalle <span>→</span></a>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="prop-card reveal-up" style="--delay:0.1s">
+                    <div class="prop-img" style="--g1:#2a1a52;--g2:#3d2070;">
+                        <img src="images/Fernando_Manterola_0550.jpg" alt="Fernando Manterola 0550"
+                            class="prop-img-photo" loading="lazy" />
+                        <div class="prop-img-shimmer"></div>
+                        <span class="prop-type-badge">Hotel Boutique</span>
+                        <span class="prop-status-badge prop-status-arrendada">Arrendada</span>
+                    </div>
+                    <div class="prop-body">
+                        <div class="prop-commune">📍 Providencia</div>
+                        <h3 class="prop-address">Fernando Manterola 0550</h3>
+                        <ul class="prop-specs">
+                            <li><span class="spec-icon">💰</span> UF 35.000</li>
+                            <li><span class="spec-icon">📐</span> 327 m² totales (300 construidos + 27 terraza)</li>
+                            <li><span class="spec-icon">🏠</span> 15D · 15B · 0 estac. · 0 bodega</li>
+                        </ul>
+                        <a href="https://wa.me/56942845969" target="_blank" rel="noopener" class="prop-cta-btn"
+                            id="prop-2-cta">Solicitar detalle <span>→</span></a>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="prop-card reveal-up" style="--delay:0.15s">
+                    <div class="prop-img" style="--g1:#0a2a3a;--g2:#0d3d52;">
+                        <img src="images/Vitacura_5067.jpg" alt="Vitacura 5067" class="prop-img-photo" loading="lazy" />
+                        <div class="prop-img-shimmer"></div>
+                        <span class="prop-type-badge">Departamento</span>
+                        <span class="prop-status-badge prop-status-arrendada">Arrendada</span>
+                    </div>
+                    <div class="prop-body">
+                        <div class="prop-commune">📍 Vitacura</div>
+                        <h3 class="prop-address">Vitacura 5067</h3>
+                        <ul class="prop-specs">
+                            <li><span class="spec-icon">💰</span> UF 9.700</li>
+                            <li><span class="spec-icon">📐</span> 104 m² totales (95 útiles + 9 terraza)</li>
+                            <li><span class="spec-icon">🏠</span> 3D · 3B · 1 estac. · 1 bodega</li>
+                        </ul>
+                        <a href="https://wa.me/56942845969" target="_blank" rel="noopener" class="prop-cta-btn"
+                            id="prop-3-cta">Solicitar detalle <span>→</span></a>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="prop-card reveal-up" style="--delay:0.2s">
+                    <div class="prop-img" style="--g1:#3a1a0a;--g2:#52240f;">
+                        <img src="images/Las_Azucenas_2997.jpg" alt="Las Azucenas 2997" class="prop-img-photo"
+                            loading="lazy" />
+                        <div class="prop-img-shimmer"></div>
+                        <span class="prop-type-badge">Local Comercial</span>
+                        <span class="prop-status-badge prop-status-arrendada">Arrendada</span>
+                    </div>
+                    <div class="prop-body">
+                        <div class="prop-commune">📍 Providencia</div>
+                        <h3 class="prop-address">Las Azucenas 2997</h3>
+                        <ul class="prop-specs">
+                            <li><span class="spec-icon">💰</span> UF 16.500</li>
+                            <li><span class="spec-icon">📐</span> 202 m² totales (133 útiles + 3 terraza)</li>
+                            <li><span class="spec-icon">🏠</span> 3D · 0B · 0 estac. · 0 bodega</li>
+                        </ul>
+                        <a href="https://wa.me/56942845969" target="_blank" rel="noopener" class="prop-cta-btn"
+                            id="prop-4-cta">Solicitar detalle <span>→</span></a>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="prop-card reveal-up" style="--delay:0.25s">
+                    <div class="prop-img" style="--g1:#001a44;--g2:#002a5e;">
+                        <img src="images/Isidora_Goyenechea_3000.jpg" alt="Isidora Goyenechea 3000"
+                            class="prop-img-photo" loading="lazy" />
+                        <div class="prop-img-shimmer"></div>
+                        <span class="prop-type-badge">Departamento</span>
+                        <span class="prop-status-badge prop-status-disponible">Disponible</span>
+                    </div>
+                    <div class="prop-body">
+                        <div class="prop-commune">📍 Las Condes</div>
+                        <h3 class="prop-address">Isidora Goyenechea 3000</h3>
+                        <ul class="prop-specs">
+                            <li><span class="spec-icon">💰</span> UF 14.000</li>
+                            <li><span class="spec-icon">📐</span> 97 m² totales (74 útiles + 23 terraza)</li>
+                            <li><span class="spec-icon">🏠</span> 1D · 1B · 1 estac. · 0 bodega</li>
+                        </ul>
+                        <a href="https://wa.me/56942845969" target="_blank" rel="noopener" class="prop-cta-btn"
+                            id="prop-5-cta">Solicitar detalle <span>→</span></a>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="prop-card reveal-up" style="--delay:0.3s">
+                    <div class="prop-img" style="--g1:#1a0c3a;--g2:#280f52;">
+                        <img src="images/Carmencita_245.png" alt="Carmencita 245" class="prop-img-photo"
+                            loading="lazy" />
+                        <div class="prop-img-shimmer"></div>
+                        <span class="prop-type-badge">Departamento</span>
+                        <span class="prop-status-badge prop-status-arrendada">Arrendada</span>
+                    </div>
+                    <div class="prop-body">
+                        <div class="prop-commune">📍 Las Condes</div>
+                        <h3 class="prop-address">Carmencita 245</h3>
+                        <ul class="prop-specs">
+                            <li><span class="spec-icon">💰</span> UF 13.956</li>
+                            <li><span class="spec-icon">📐</span> 133 m² totales (133 útiles)</li>
+                            <li><span class="spec-icon">🏠</span> 3D · 3B · 1 estac. · 0 bodega</li>
+                        </ul>
+                        <a href="https://wa.me/56942845969" target="_blank" rel="noopener" class="prop-cta-btn"
+                            id="prop-6-cta">Solicitar detalle <span>→</span></a>
+                    </div>
+                </article>
+
+            </div><!-- /props-grid -->
+
+            <div class="props-cta reveal-up">
+                <a href="https://wa.me/56942845969" target="_blank" rel="noopener" class="btn-whatsapp btn-lg"
+                    id="props-cta-wa">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    <span>Solicitar detalle completo</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN 6: FAQ ===== -->
+    <section class="section-faq" id="preguntas">
+        <div class="section-container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Preguntas frecuentes</h2>
+                <p class="section-subtitle">Respuestas directas sobre cómo trabajamos y cómo funciona el proceso.</p>
+            </div>
+
+            <div class="faq-list reveal-up">
+                <div class="faq-item">
+                    <button class="faq-btn" aria-expanded="false" id="faq-1">
+                        <span>¿Trabajan con inmobiliarias externas?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="faq-body">
+                        <p>No. Trabajamos exclusivamente con nuestra cartera propia. Esto nos permite conocer cada
+                            propiedad en detalle y entregar información precisa y verificada.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-btn" aria-expanded="false" id="faq-2">
+                        <span>¿Las propiedades están arrendadas?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="faq-body">
+                        <p>Sí, la mayoría. El 95% de nuestra cartera se encuentra actualmente arrendada. Para
+                            inversionistas, esto representa una ventaja: flujo activo desde el primer mes. Para uso
+                            propio, el proceso contempla los plazos legales de entrega.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-btn" aria-expanded="false" id="faq-3">
+                        <span>¿Es distinto el crédito hipotecario para una propiedad usada?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="faq-body">
+                        <p>No. Es un crédito hipotecario tradicional, similar al de una propiedad nueva. Sin embargo, el
+                            proceso suele ser más detallado porque incluye el estudio de títulos y la revisión del
+                            historial legal del inmueble.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-btn" aria-expanded="false" id="faq-4">
+                        <span>¿Cuánto demora el proceso de compra?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="faq-body">
+                        <p>Entre 2 y 4 meses según cada caso. Los factores que influyen son el estudio de títulos, la
+                            velocidad de evaluación bancaria y la coordinación entre las partes involucradas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN FINAL: CTA ===== -->
+    <section class="section-final" id="contacto">
+        <div class="section-container">
+            <div class="final-inner reveal-up">
+                <div class="final-glow"></div>
+                <div class="final-icon">💬</div>
+                <h2 class="final-title">Si alguna propiedad te interesa,<br><span
+                        class="gradient-text">conversemos</span></h2>
+                <p class="final-text">Revisamos contigo disponibilidad, condiciones y siguientes pasos.</p>
+                <a href="https://wa.me/56942845969" target="_blank" rel="noopener" class="btn-whatsapp btn-xl"
+                    id="final-cta">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    <span>Hablar con un asesor ahora</span>
+                </a>
+                <p class="final-note">Respondemos dentro del horario hábil. Sin presión ni compromiso.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="#" class="nav-logo footer-logo-link">
+                <img src="images/Brix-LogoBlanco-256.png" alt="Brix Corredora" class="brand-logo" />
+            </a>
+            <div class="footer-center">
+                <p class="footer-tagline">Corredora especializada · Sector Oriente · Santiago</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link" aria-label="Instagram" id="footer-ig">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn" id="footer-li">
+                    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <a href="https://wa.me/56942845969" target="_blank" rel="noopener" class="social-link"
+                    aria-label="WhatsApp" id="footer-wa">
+                    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">© 2025 BRIX Corredora. Todos los derechos reservados.</p>
+            <a href="#" class="footer-privacy">Política de privacidad</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
