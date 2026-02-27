@@ -590,18 +590,22 @@ h4 {
 }
 
 .vc-range {
-  font-size: 1.45rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
   font-weight: 800;
   letter-spacing: -0.02em;
   color: #fff;
   margin-bottom: 24px;
-  line-height: 1.2;
+  line-height: 1.25;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-.vc-range-sep {
-  color: var(--text-muted);
-  font-weight: 300;
-  margin: 0 6px;
+.vc-range-line {
+  font-size: clamp(1.15rem, 4.5vw, 1.45rem);
+  display: block;
+  white-space: nowrap;
 }
 
 .vc-metric {
